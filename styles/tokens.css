@@ -1,0 +1,139 @@
+/* DS3 (Cynet Foundations) variables, as resolved in the App Control boards (get_variable_defs, 2026-11-12).
+   Names mirror the Figma variable paths: "Text/Text_Primary" -> --text-text_primary. */
+:root {
+  /* Backgrounds */
+  --bg-bg_default: #1e1f2c;
+  --bg-bg_sidemenu: #232430;
+  --bg-bg_surface_tablerows_popup: #30313d;
+  --bg-bg_stage: rgba(255, 255, 255, 0.04);
+  --bg-bg_stage_dark: rgba(30, 31, 44, 0.48);
+
+  /* Text */
+  --text-text_primary: #ededee;
+  --text-text_secondary: #c0c0c4;
+  --text-text_trtiary: #8c8a93;
+  --text-text_label: #c0c0c4;
+  --text-text_disabled: rgba(255, 255, 255, 0.24);
+  --text-text_readonly: #ededee;
+  --text-text_white: #ffffff;
+  --text-text_button_light: #ffffff;
+  --text-text_button_dark: #1e1f2c;
+  --text-text_link: #509aff;
+  --text-text_brand: #006aff;
+  --text-text_error: #ff4842;
+  --text-text_warning: #f99d2f;
+  --text-text_success: #24a348;
+  --text_primary: #ffffff;
+
+  /* Icons */
+  --icon-icon_strong: #ffffff;
+  --icon-icon_default: #c0c0c4;
+  --icon-icon_active: #ededee;
+  --icon-icon_tertiary: #8c8a93;
+  --icon-icon_weak: #7d7e87;
+  --icon-icon_disabled: rgba(255, 255, 255, 0.24);
+  --icon-icon_brand: #006aff;
+
+  /* Components */
+  --components-com_dividers: rgba(255, 255, 255, 0.12);
+  --components-com_outline: #7d7e87;
+  --components-com_scroll: rgba(255, 255, 255, 0.24);
+  --components-com_active: #006aff;
+  --components-com_disabled: #3a3b46;
+  --components-com_dropdowns_bg: #3a3b46;
+  --components-switch_off_active: #c0c0c4;
+  --components-switch_on_highlight: #113e85;
+  --divider-15: rgba(255, 255, 255, 0.24);
+
+  /* Menus and tables */
+  --menus-menu_selected: #006aff;
+  --table-table_default: #30313d;
+  --table-table_hover: #383945;
+  --table-table_selected: #006aff;
+
+  /* Buttons */
+  --buttons-btn_primary_default: #006aff;
+  --buttons-btn_primary_disabled: rgba(36, 63, 109, 0.48);
+  --buttons-btn_secondary_default: #3a3b46;
+  --buttons-btn_secondary_disabled: #3a3b46;
+  --buttons-btn_outline_default: #509aff;
+  --buttons-btn_outline_disabled: rgba(80, 154, 255, 0.48);
+  --buttons-btn_ghost_default: #ededee;
+
+  /* Status */
+  --status-error_main: #ff4842;
+  --status-error_bold: #ff4842;
+  --status-warning_main: #f99d2f;
+  --status-success_main: #24a348;
+  --status-success_bold: #17ea8f;
+  --status-info: #826af9;
+  --status-light_bg: rgba(255, 255, 255, 0.14);
+  --status-pink_bg: #422548;
+  --status-highlight_01: #ef71ea;
+  --status-new_bold: #ef71ea;
+  --severity-medium_fg: #f99d2f;
+
+  /* Palette */
+  --colors-blue500: #006aff;
+  --blue-primary500: #3366ff;
+  --blue-primary600: #4563c3;
+  --color-blue-primary-100: #c8dfff;
+  --color-blue-primary-200: #99b3ff;
+  --color-blue-primary-500: #028bff;
+  --color-blue-primary-700: #3a509b;
+  --color-turkiz-blue-200: #ccf9ff;
+  --color-turkiz-blue-700: #4c95ab;
+  --color-turkiz-blue-800: #3d7086;
+  --color-pink-100: #fbe8ff;
+  --color-pink-700: #82399b;
+  --color-pink-800: #62317b;
+  --color-pink-red-700: #9e0e57;
+  --color-pink-red-1000: #401c40;
+  --pink-secondary500: #f937a0;
+  --colors-dark-pink400: #e781fa;
+  --color-grey-200: #7d7e87;
+  --color-grey-400: #42434e;
+  --color-grey-450: #54555f;
+  --color-orange-400: #ff8e58;
+  --color-orange-500: #ff7b00;
+  --color-yellow-400: #ffec71;
+  --color-red-300: #ff7475;
+  --color-red-400: #ff5e5f;
+  --color-purple-900: #303168;
+  --color-purple-pink-400: #b283f3;
+  --color-blue-light-300: #b8e7ff;
+  --color-blue-light-400: #81d4ff;
+  --color-blue-light-1000: #1e2f4b;
+
+  /* Typography primitives */
+  --font-family-title: "Inter", system-ui, sans-serif;
+  --font-family-body: "Inter", system-ui, sans-serif;
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 20px;
+  --lh-xxs: 14px;
+  --lh-s: 18px;
+  --lh-m: 20px;
+  --lh-l: 22px;
+  --lh-xl: 24px;
+  --lh-xxl: 28px;
+  --lh-xxxl: 36px;
+
+  /* Effects */
+  --shadow-dropdown: 0 8px 16px rgba(0, 0, 0, 0.24);
+  --shadow-z24: 0 24px 48px rgba(0, 0, 0, 0.2);
+  --shadow-z1: 0 1px 2px rgba(0, 0, 0, 0.12);
+  /* Stage 2 additions (values from the RMM board's get_design_context) */
+  --buttons-btn_error_default: #ff4842;
+  --buttons-btn_secondary_txt: #ededee;
+  --bg-bg_dropdown: #42434e;
+  --bg-bg_filter_panel: #383945;
+  --toast-bg: #3a3b46;
+  --toast-success_bar: #24a348;
+  --toast-error_bar: #ff4842;
+  --color-divider-15: rgba(255, 255, 255, 0.12);
+  --shadow-toast: 0 4px 2px rgba(0, 0, 0, 0.25);
+  --shadow-modal: 0 24px 24px rgba(0, 0, 0, 0.2);
+}

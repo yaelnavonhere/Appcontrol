@@ -1,0 +1,45 @@
+/* DS3 text styles and shared component styles used by the shell. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+body {
+  background: var(--bg-bg_default);
+  color: var(--text-text_primary);
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-s);
+  line-height: var(--lh-m);
+  -webkit-font-smoothing: antialiased;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+img { display: block; }
+
+/* Text styles (DS3 ✅ styles) */
+.t-h5 { font-size: 28px; line-height: var(--lh-xxxl); font-weight: 400; }
+.t-h6 { font-size: var(--font-size-l); line-height: var(--lh-xxl); font-weight: 400; }
+.t-subtitle1 { font-size: var(--font-size-m); line-height: var(--lh-xl); font-weight: 600; }
+.t-subtitle2 { font-size: var(--font-size-s); line-height: var(--lh-s); font-weight: 600; }
+.t-body1 { font-size: var(--font-size-m); line-height: var(--lh-xl); font-weight: 400; }
+.t-body2 { font-size: var(--font-size-s); line-height: var(--lh-m); font-weight: 400; }
+.t-body-compat01 { font-size: var(--font-size-m); line-height: var(--lh-l); }
+.t-body-compat02 { font-size: var(--font-size-s); line-height: var(--lh-s); }
+.t-caption02 { font-size: var(--font-size-xs); line-height: var(--lh-xxs); }
+.t-caption-small { font-size: var(--font-size-xxs); line-height: var(--lh-xxs); }
+.t-capital-title { font-size: var(--font-size-xxs); line-height: var(--lh-s); font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; }
+.t-popup-title { font-size: 18px; line-height: 28px; font-weight: 600; }
+
+/* Badge (e.g. SIEM "Beta") */
+.badge-beta {
+  display: inline-flex; align-items: center; height: 14px; padding: 0 4px; gap: 1px;
+  background: var(--status-pink_bg); border: 1px solid var(--color-pink-red-700); border-radius: 2px;
+  color: var(--status-highlight_01); font-size: 10px; line-height: 18px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase;
+}
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 6px 16px; border-radius: 4px; font-size: 14px; line-height: 20px; white-space: nowrap; }
+.btn-primary { background: var(--buttons-btn_primary_default); color: var(--text-text_button_light); }
+.btn-secondary { background: var(--buttons-btn_secondary_default); color: var(--text-text_primary); }
+.btn-ghost { color: var(--buttons-btn_ghost_default); }
+.btn-icon { width: 40px; height: 40px; padding: 12px; border-radius: 4px; }
+.btn:focus-visible, .btn-icon:focus-visible, [role="tab"]:focus-visible, .nav-item:focus-visible { outline: 2px solid var(--colors-blue500); outline-offset: 2px; }
+
+/* Divider */
+.divider-h { height: 1px; background: var(--components-com_dividers); width: 100%; }
